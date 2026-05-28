@@ -34,9 +34,7 @@ function Journeys() {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-cyan-100 backdrop-blur-md">
-                Curated Sri Lanka Travel Experiences
-              </span>
+              
 
               <h1 className="mt-6 max-w-2xl text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
                 Explore unforgettable{" "}
@@ -51,18 +49,6 @@ function Journeys() {
                 TravLanka offers modern, carefully curated journeys designed for
                 comfort, beauty, and memorable experiences.
               </p>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-slate-100 backdrop-blur-md">
-                  Handpicked itineraries
-                </span>
-                <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-slate-100 backdrop-blur-md">
-                  Flexible plans
-                </span>
-                <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-slate-100 backdrop-blur-md">
-                  Premium local experiences
-                </span>
-              </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
@@ -84,32 +70,13 @@ function Journeys() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-3 shadow-2xl backdrop-blur-xl">
                 <img
-                  src="/images/hero/hero.jpeg"
+                  src="/journeys.jpeg"
                   alt="TravLanka journeys"
                   className="h-[300px] w-full rounded-[1.5rem] object-cover sm:h-[400px] lg:h-[460px]"
                 />
               </div>
 
-              <div className="absolute -bottom-6 left-4 right-4 grid grid-cols-2 gap-3 sm:left-8 sm:right-8 sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-xl">
-                  <p className="text-2xl font-bold text-cyan-200">25+</p>
-                  <p className="mt-1 text-xs text-slate-200 sm:text-sm">
-                    Curated Journeys
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-xl">
-                  <p className="text-2xl font-bold text-emerald-200">100%</p>
-                  <p className="mt-1 text-xs text-slate-200 sm:text-sm">
-                    Tailored Comfort
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-white/15 bg-white/10 p-4 text-center backdrop-blur-xl col-span-2 sm:col-span-1">
-                  <p className="text-2xl font-bold text-sky-200">Islandwide</p>
-                  <p className="mt-1 text-xs text-slate-200 sm:text-sm">
-                    Coverage
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -153,10 +120,7 @@ function Journeys() {
               </h2>
             </div>
 
-            <p className="max-w-xl text-sm leading-6 text-slate-300 sm:text-base">
-              Each journey is designed to blend comfort, exploration, and the
-              natural beauty of Sri Lanka into a premium travel experience.
-            </p>
+            
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">

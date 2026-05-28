@@ -18,13 +18,7 @@ function Hero() {
       {/* Content */}
       <div className="relative mx-auto flex min-h-[100vh] max-w-7xl items-center px-6 pt-36 pb-16 text-white md:px-8 lg:px-10">
         <div className="max-w-3xl">
-          {/* Eyebrow */}
-          <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md">
-            <span className="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-white/85">
-              Curated Sri Lanka Journeys
-            </p>
-          </div>
+          
 
           {/* Heading */}
           <h1 className="max-w-3xl text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
@@ -41,18 +35,7 @@ function Hero() {
             flexibility, and local expertise.
           </p>
 
-          {/* Small info chips */}
-          <div className="mt-8 flex flex-wrap gap-3">
-            <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/85 backdrop-blur-md">
-              Private Transport
-            </span>
-            <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/85 backdrop-blur-md">
-              Flexible Dates
-            </span>
-            <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-white/85 backdrop-blur-md">
-              Handpicked Stays
-            </span>
-          </div>
+          
 
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap items-center gap-4">

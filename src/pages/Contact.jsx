@@ -1,181 +1,242 @@
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  Mail,
+  Phone,
+  MapPin,
+  Clock3,
+  MessageCircle,
+  ArrowRight,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+
+const contactMethods = [
+  {
+    title: "WhatsApp",
+    description: "Quick replies for bookings and travel questions",
+    value: "+94 77 123 4567",
+    href: "https://wa.me/94771234567",
+    icon: MessageCircle,
+    bg: "from-emerald-500 to-green-500",
+  },
+  {
+    title: "Email",
+    description: "Best for detailed trip inquiries",
+    value: "hello@travlanka.com",
+    href: "mailto:hello@travlanka.com",
+    icon: Mail,
+    bg: "from-cyan-500 to-blue-500",
+  },
+  {
+    title: "Phone",
+    description: "Talk directly with our team",
+    value: "+94 77 123 4567",
+    href: "tel:+94771234567",
+    icon: Phone,
+    bg: "from-sky-500 to-indigo-500",
+  },
+  {
+    title: "Instagram",
+    description: "Travel inspiration, reels and updates",
+    value: "@travlanka",
+    href: "https://instagram.com/",
+    icon: Instagram,
+    bg: "from-pink-500 to-rose-500",
+  },
+  {
+    title: "Facebook",
+    description: "Follow our latest travel stories",
+    value: "TravLanka",
+    href: "https://facebook.com/",
+    icon: Facebook,
+    bg: "from-blue-500 to-indigo-500",
+  },
+  {
+    title: "TikTok",
+    description: "Short travel videos and destination highlights",
+    value: "@travlanka",
+    href: "https://tiktok.com/",
+    icon: null,
+    bg: "from-slate-700 to-slate-900",
+  },
+];
+
+const infoCards = [
+  {
+    title: "Location",
+    value: "Colombo, Sri Lanka",
+    sub: "Helping travelers across the island",
+    icon: MapPin,
+  },
+  {
+    title: "Working Hours",
+    value: "Mon - Sat | 8:30 AM - 6:00 PM",
+    sub: "Usually replies within a few hours",
+    icon: Clock3,
+  },
+];
 
 const Contact = () => {
   return (
     <section className="min-h-screen bg-gradient-to-b from-emerald-50 via-white to-cyan-50 pt-28 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Hero */}
-        <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-md border border-emerald-100 text-emerald-700 text-sm font-medium shadow-sm">
-            Get in Touch
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <span className="inline-flex items-center rounded-full border border-emerald-200 bg-white/80 px-4 py-1.5 text-sm font-medium text-emerald-700 shadow-sm backdrop-blur">
+            Contact TravLanka
           </span>
 
-          <h1 className="mt-4 text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-            Contact <span className="text-emerald-600">TravLanka</span>
+          <h1 className="mt-5 text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+            Let’s Connect For Your Next{" "}
+            <span className="text-emerald-600">Sri Lanka Journey</span>
           </h1>
 
-          <p className="mt-4 max-w-2xl mx-auto text-slate-600 text-base md:text-lg leading-relaxed">
-            Have questions about destinations, custom trips, bookings, or travel plans in Sri Lanka?
-            Our team is here to help you create your perfect journey.
+          <p className="mt-4 text-base md:text-lg text-slate-600 leading-relaxed">
+            Need help with destinations, bookings, travel ideas, or a custom
+            island adventure? Reach us through your favorite platform.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
-          {/* Left Info Section */}
-          <div className="bg-white/70 backdrop-blur-xl border border-white/60 rounded-3xl shadow-xl p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              Let’s plan your next adventure
-            </h2>
-            <p className="text-slate-600 leading-relaxed mb-8">
-              Reach out to us for bookings, destination guidance, custom itineraries, or any travel support.
-              We’ll get back to you as soon as possible.
-            </p>
+        {/* Main layout */}
+        <div className="grid xl:grid-cols-[1.1fr_0.9fr] gap-8">
+          {/* Left side */}
+          <div className="space-y-8">
+            {/* Contact Methods */}
+            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
+              {contactMethods.map((item) => {
+                const Icon = item.icon;
 
-            <div className="space-y-5">
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
-                <div className="p-3 rounded-xl bg-emerald-500 text-white">
-                  <Phone size={20} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Phone</h3>
-                  <p className="text-slate-600 mt-1">+94 77 123 4567</p>
-                  <p className="text-sm text-slate-500">Call us for quick support</p>
-                </div>
-              </div>
+                return (
+                  <a
+                    key={item.title}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group rounded-3xl border border-white/60 bg-white/75 p-5 shadow-lg backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                  >
+                    <div
+                      className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${item.bg} text-white shadow-md`}
+                    >
+                      {Icon ? (
+                        <Icon size={24} />
+                      ) : (
+                        <span className="text-xl font-bold">♪</span>
+                      )}
+                    </div>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-cyan-50 border border-cyan-100">
-                <div className="p-3 rounded-xl bg-cyan-500 text-white">
-                  <Mail size={20} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Email</h3>
-                  <p className="text-slate-600 mt-1">hello@travlanka.com</p>
-                  <p className="text-sm text-slate-500">Send us your travel inquiries anytime</p>
-                </div>
-              </div>
+                    <h3 className="mt-4 text-xl font-semibold text-slate-900">
+                      {item.title}
+                    </h3>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-blue-50 border border-blue-100">
-                <div className="p-3 rounded-xl bg-blue-500 text-white">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Location</h3>
-                  <p className="text-slate-600 mt-1">Colombo, Sri Lanka</p>
-                  <p className="text-sm text-slate-500">Serving travelers across the island</p>
-                </div>
-              </div>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                      {item.description}
+                    </p>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-teal-50 border border-teal-100">
-                <div className="p-3 rounded-xl bg-teal-500 text-white">
-                  <Clock size={20} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-slate-900">Working Hours</h3>
-                  <p className="text-slate-600 mt-1">Mon - Sat: 8:30 AM - 6:00 PM</p>
-                  <p className="text-sm text-slate-500">We usually reply within 24 hours</p>
-                </div>
-              </div>
+                    <div className="mt-4 flex items-center justify-between gap-3">
+                      <span className="text-sm font-medium text-slate-800 break-all">
+                        {item.value}
+                      </span>
+                      <ArrowRight
+                        size={18}
+                        className="text-slate-400 transition group-hover:translate-x-1 group-hover:text-emerald-600"
+                      />
+                    </div>
+                  </a>
+                );
+              })}
             </div>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-r from-emerald-500 to-cyan-500 p-[1px]">
-              <div className="rounded-2xl bg-white px-5 py-4 flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-emerald-100 text-emerald-700">
-                  <MessageCircle size={20} />
-                </div>
-                <p className="text-sm sm:text-base text-slate-700">
-                  Need a <span className="font-semibold text-slate-900">custom Sri Lanka trip</span>? Tell us your budget,
-                  places, and travel dates.
-                </p>
-              </div>
+            {/* Info cards */}
+            <div className="grid md:grid-cols-2 gap-5">
+              {infoCards.map((item) => {
+                const Icon = item.icon;
+
+                return (
+                  <div
+                    key={item.title}
+                    className="rounded-3xl border border-white/60 bg-white/75 p-6 shadow-lg backdrop-blur-xl"
+                  >
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+                      <Icon size={22} />
+                    </div>
+
+                    <h3 className="mt-4 text-lg font-semibold text-slate-900">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-slate-700 font-medium">
+                      {item.value}
+                    </p>
+                    <p className="mt-1 text-sm text-slate-500">{item.sub}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
-          {/* Right Form Section */}
-          <div className="bg-white/80 backdrop-blur-xl border border-white/60 rounded-3xl shadow-xl p-6 sm:p-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-2">Send us a message</h2>
-            <p className="text-slate-600 mb-8">
-              Fill in the form and our team will contact you soon.
-            </p>
+          {/* Right side */}
+          <div className="rounded-[2rem] border border-white/60 bg-white/80 p-6 sm:p-8 shadow-xl backdrop-blur-xl h-fit">
+            <div className="rounded-3xl bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 p-6 text-white shadow-lg">
+              <h2 className="text-2xl font-bold leading-snug">
+                Need help planning your trip?
+              </h2>
+              <p className="mt-3 text-white/90 leading-relaxed">
+                Use our Custom Trip page for personalized itineraries or go to
+                Reserve if you are ready to book your journey.
+              </p>
 
-            <form className="space-y-5">
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your first name"
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
-                  />
-                </div>
+              <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                <Link
+                  to="/custom-trip"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3 font-semibold text-emerald-700 transition hover:scale-[1.02]"
+                >
+                  Custom Trip
+                  <ArrowRight size={18} />
+                </Link>
 
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your last name"
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
-                  />
-                </div>
+                <Link
+                  to="/reserve"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/40 bg-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/20"
+                >
+                  Reserve Now
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-6 space-y-4">
+              <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
+                <h3 className="font-semibold text-slate-900">
+                  Best for quick replies
+                </h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  WhatsApp is the fastest way to contact us for simple questions
+                  and booking support.
+                </p>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter your phone number"
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition"
-                  />
-                </div>
+              <div className="rounded-2xl border border-cyan-100 bg-cyan-50 p-4">
+                <h3 className="font-semibold text-slate-900">
+                  Best for detailed plans
+                </h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Email us when you want to share dates, budget, destinations,
+                  and trip preferences.
+                </p>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  placeholder="What is this about?"
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
-                />
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <h3 className="font-semibold text-slate-900">
+                  Good things to include
+                </h3>
+                <ul className="mt-2 space-y-2 text-sm text-slate-600">
+                  <li>• Travel dates</li>
+                  <li>• Number of people</li>
+                  <li>• Preferred destinations</li>
+                  <li>• Budget range</li>
+                  <li>• Hotel / transport needs</li>
+                </ul>
               </div>
-
-              <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows="6"
-                  placeholder="Tell us about your travel plan..."
-                  className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition resize-none"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-semibold shadow-lg hover:scale-[1.02] transition duration-300"
-              >
-                <Send size={18} />
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>

@@ -16,8 +16,7 @@ const destinations = [
     name: "Sigiriya",
     region: "Cultural Triangle",
     category: "Heritage",
-    image:
-      "https://images.unsplash.com/photo-1586500036706-41963de24d8b?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/sigiriya.jpg",
     description:
       "Sri Lanka’s iconic rock fortress surrounded by ancient gardens, frescoes, and stunning summit views.",
   },
@@ -26,8 +25,7 @@ const destinations = [
     name: "Ella",
     region: "Uva Province",
     category: "Hill Country",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/ella.jpg",
     description:
       "A scenic mountain town known for tea estates, Nine Arches Bridge, hiking trails, and cool fresh air.",
   },
@@ -36,8 +34,7 @@ const destinations = [
     name: "Mirissa",
     region: "Southern Coast",
     category: "Beach",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/mirissa.jpg",
     description:
       "Golden beaches, whale watching, palm-lined coastlines, and vibrant sunset vibes on the south coast.",
   },
@@ -46,8 +43,7 @@ const destinations = [
     name: "Yala National Park",
     region: "Southern Sri Lanka",
     category: "Wildlife",
-    image:
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/yala.jpg",
     description:
       "One of the best places in Sri Lanka to spot leopards, elephants, birds, and dramatic wild landscapes.",
   },
@@ -56,8 +52,7 @@ const destinations = [
     name: "Kandy",
     region: "Central Province",
     category: "City",
-    image:
-      "https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/kandy.jpg",
     description:
       "The cultural heart of Sri Lanka, home to the Temple of the Tooth and surrounded by misty hills.",
   },
@@ -66,8 +61,7 @@ const destinations = [
     name: "Nuwara Eliya",
     region: "Central Highlands",
     category: "Hill Country",
-    image:
-      "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/nuwara eliya.jpg",
     description:
       "A charming highland escape with tea plantations, cool weather, waterfalls, and colonial elegance.",
   },
@@ -76,8 +70,7 @@ const destinations = [
     name: "Galle Fort",
     region: "Southern Province",
     category: "Heritage",
-    image:
-      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/galle.jpg",
     description:
       "A UNESCO-listed coastal fort city blending colonial history, boutique cafes, and ocean views.",
   },
@@ -86,8 +79,7 @@ const destinations = [
     name: "Arugam Bay",
     region: "Eastern Coast",
     category: "Beach",
-    image:
-      "https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/ArugamBay.jpg",
     description:
       "A laid-back eastern paradise famous for surfing, beach life, and relaxed tropical adventure.",
   },
@@ -96,8 +88,7 @@ const destinations = [
     name: "Anuradhapura",
     region: "North Central Province",
     category: "Heritage",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/anuradhapura.jpg",
     description:
       "An ancient sacred city filled with dagobas, ruins, monasteries, and centuries of Buddhist heritage.",
   },
@@ -106,8 +97,7 @@ const destinations = [
     name: "Trincomalee",
     region: "Eastern Province",
     category: "Beach",
-    image:
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/trinco.jpg",
     description:
       "Crystal-clear beaches, snorkeling spots, and a peaceful coastal atmosphere on the east coast.",
   },
@@ -116,8 +106,7 @@ const destinations = [
     name: "Jaffna",
     region: "Northern Province",
     category: "City",
-    image:
-      "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/jaffna.jpeg",
     description:
       "A unique northern destination rich in Tamil culture, cuisine, islands, and historical character.",
   },
@@ -126,8 +115,7 @@ const destinations = [
     name: "Wilpattu National Park",
     region: "North Western Province",
     category: "Wildlife",
-    image:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/wilpaththu.jpg",
     description:
       "A vast national park known for lakes, quiet jungle drives, leopards, and a more secluded safari feel.",
   },
@@ -136,8 +124,7 @@ const destinations = [
     name: "Bentota",
     region: "Western Coast",
     category: "Beach",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/bentota.jpg",
     description:
       "A popular beach town with luxury resorts, river safaris, water sports, and family-friendly relaxation.",
   },
@@ -146,8 +133,7 @@ const destinations = [
     name: "Polonnaruwa",
     region: "North Central Province",
     category: "Heritage",
-    image:
-      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/polonnaruwa.jpg",
     description:
       "A beautifully preserved medieval kingdom with ancient statues, temples, and royal ruins.",
   },
@@ -156,8 +142,7 @@ const destinations = [
     name: "Horton Plains",
     region: "Central Highlands",
     category: "Wildlife",
-    image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/horton plains.jpg",
     description:
       "Cloud forests, grasslands, and the famous World’s End viewpoint create a breathtaking hiking experience.",
   },
@@ -166,8 +151,7 @@ const destinations = [
     name: "Kalpitiya",
     region: "North Western Coast",
     category: "Hidden Gem",
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/kalpitiya.jpg",
     description:
       "A lesser-known coastal escape ideal for dolphin watching, kite surfing, and quiet beach adventures.",
   },
@@ -176,8 +160,7 @@ const destinations = [
     name: "Colombo",
     region: "Western Province",
     category: "City",
-    image:
-      "https://images.unsplash.com/photo-1470004914212-05527e49370b?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/colombo.jpg",
     description:
       "Sri Lanka’s vibrant capital with city energy, oceanfront views, shopping, dining, and modern culture.",
   },
@@ -186,8 +169,7 @@ const destinations = [
     name: "Knuckles Range",
     region: "Central Sri Lanka",
     category: "Hidden Gem",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop",
+    image: "/destinations/knuckles range.jpg",
     description:
       "A spectacular mountain range perfect for trekking, waterfalls, remote villages, and nature lovers.",
   },
@@ -305,31 +287,6 @@ export default function Destinations() {
         </div>
       </section>
 
-      {/* Intro Stats */}
-      <section className="mx-auto max-w-7xl px-6 pt-14 lg:px-8">
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
-            <h3 className="text-3xl font-bold text-emerald-600">18+</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Handpicked destinations from north to south, east to west.
-            </p>
-          </div>
-          <div className="rounded-3xl border border-sky-100 bg-white p-6 shadow-sm">
-            <h3 className="text-3xl font-bold text-sky-600">7</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Categories including beaches, heritage, wildlife, and hill
-              country escapes.
-            </p>
-          </div>
-          <div className="rounded-3xl border border-teal-100 bg-white p-6 shadow-sm">
-            <h3 className="text-3xl font-bold text-teal-600">All Island</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              A complete travel showcase designed to help visitors explore all
-              around Sri Lanka.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Destination Grid */}
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
